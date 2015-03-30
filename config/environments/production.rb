@@ -79,8 +79,8 @@ Todo::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: 'http://todo-yourdomainhere.rhcloud.com' }
-  config.action_mailer.asset_host = 'http://todo-yourdomainhere.rhcloud.com'
+  config.action_mailer.default_url_options = { host: 'http://mysterious-basin-9211.herokuapp.com' }
+  config.action_mailer.asset_host = 'http://mysterious-basin-9211.herokuapp.com'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
