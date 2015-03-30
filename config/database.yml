@@ -19,7 +19,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: <%=ENV['DATABASE_URL']%>/production.sqlite3
+  adapter: postgresql
+  database: <%=ENV['DATABASE_URL']%>
   pool: 5
   timeout: 5000
