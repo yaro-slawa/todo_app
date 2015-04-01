@@ -79,18 +79,17 @@ Todo::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
 
-  config.action_mailer.default_url_options = { :host => 'http://todo-todorubyonrails.rhcloud.com' }
+config.action_mailer.default_url_options = { :host => 'http://todo-todorubyonrails.rhcloud.com' }
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
 config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
+  address: "smtp.mailgun.com",
   port: 587,
-  domain: "http://todo-todorubyonrails.rhcloud.com",
+  domain: "sandbox3062952b83f74654878c37ac8841fbdd.mailgun.org",
   authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: 'slawache@gmail.com',
-  password: 'fucking29shit'
+  user_name: "postmaster@sandbox3062952b83f74654878c37ac8841fbdd.mailgun.org",
+  password: "2acac8e75b878527f40bec6cf73a7c74"
 }
 end
